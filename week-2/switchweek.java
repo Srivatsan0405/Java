@@ -9,8 +9,7 @@ public class switchweek{
                 break;
             case (2):
                 System.out.println("Tuesday");
-                break;
-            case (3):
+                case (3):
                 System.out.println("Wednesday");
                 break;
             case (4):
@@ -28,5 +27,6 @@ public class switchweek{
             default:
                 System.out.println("Invalid day");
         }
+        ip.close();
     }
 }

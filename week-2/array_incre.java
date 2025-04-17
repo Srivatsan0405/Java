@@ -12,19 +12,20 @@ public class array_incre {
     }
 
     public static void main(String[] args) {
-        Scanner ip = new Scanner(System.in);
-        System.out.println("Enter the size of the array:");
-        int n = ip.nextInt();
-        int[] arr = new int[n];
-        System.out.println("Enter the elements of the array:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = ip.nextInt();
-        }
-
-        if (isSorted(arr)) {
-            System.out.println("The array is increasing.");
-        } else {
-            System.out.println("The array is NOT increasing.");
+        try (Scanner ip = new Scanner(System.in)) {
+            System.out.println("Enter the size of the array:");
+            int n = ip.nextInt();
+            int[] arr = new int[n];
+            System.out.println("Enter the elements of the array:");
+            for (int i = 0; i < n; i++) {
+                arr[i] = ip.nextInt();
+            }
+            
+            if (isSorted(arr)) {
+                System.out.println("The array is increasing.");
+            } else {
+                System.out.println("The array is NOT increasing.");
+            }
         }
     }
 }
