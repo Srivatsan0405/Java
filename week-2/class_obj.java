@@ -2,13 +2,18 @@ public class class_obj {
     public static void main(String[] args) {
         Car car = new Car();
         car.start();
+        System.out.println("The car is now running.");
         car.stop();
+        System.out.println("The car has been stopped using the stop method.");
     }
     
 }
-abstract class Vehicle{
+abstract class Vehicle {
 
-    @SuppressWarnings("unused")
+    Vehicle() {
+        System.out.println("Vehicle is created");
+    }
+
     abstract void start();
     @SuppressWarnings("unused")
     abstract void stop();       
